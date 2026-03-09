@@ -1,0 +1,40 @@
+.whyus {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.whyus h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.whyus-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.whyus-card {
+  width: 220px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.whyus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.whyus-card h3 {
+  margin-bottom: 10px;
+}
+
+.whyus-card p {
+  font-size: 14px;
+}

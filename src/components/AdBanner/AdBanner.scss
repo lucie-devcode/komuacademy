@@ -1,0 +1,33 @@
+.adbanner-container {
+  width: 100%;
+  overflow: hidden; // cache le texte hors écran
+  background-color: blue;
+  color: white;
+  font-family: "Pixel Subway", sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.adbanner-scroll {
+  display: flex;
+  white-space: nowrap;
+  /* scroll continu */
+  animation: scrollText 20s linear infinite;
+}
+
+.adbanner-scroll span {
+  margin-right: 80px; // espace entre les messages
+}
+
+/* Scroll infini complet */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); /* défiler toute la longueur */
+  }
+}
