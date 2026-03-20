@@ -7,8 +7,8 @@ export default function AdBanner({ messages }) {
   return (
     <div className="adbanner-container">
       <div className="adbanner-scroll">
-        {allMessages.map((msg, idx) => (
-          <span key={idx}>{msg}</span>
+        {allMessages.map((msg, i) => (
+          <span key={i}>{msg}</span>
         ))}
       </div>
     </div>

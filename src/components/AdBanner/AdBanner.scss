@@ -13,21 +13,24 @@
 
 .adbanner-scroll {
   display: flex;
-  white-space: nowrap;
+  width: max-content;
   /* scroll continu */
-  animation: scrollText 20s linear infinite;
+  animation: scrollText 15s linear infinite;
 }
 
 .adbanner-scroll span {
-  margin-right: 80px; // espace entre les messages
+  white-space: nowrap;
+
+  margin-right: 80px;
+  // espace entre les messages
 }
 
 /* Scroll infini complet */
 @keyframes scrollText {
-  0% {
-    transform: translateX(100%);
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%); /* défiler toute la longueur */
+  to {
+    transform: translateX(-50%);
   }
 }

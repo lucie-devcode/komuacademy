@@ -33,6 +33,11 @@
     box-shadow 0.25s ease;
 }
 
+.small-text {
+  font-size: 14px;
+  color: #666;
+}
+
 .course-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
